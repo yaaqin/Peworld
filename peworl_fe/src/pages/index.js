@@ -4,7 +4,7 @@ import Footer from "./Component/footer";
 export default function Home() {
   return (
     <main>
-      <Navbar/>
+      <Navbar />
       <section
         id="content-1"
         className="py-[70px] container mx-auto px-[100px] grid grid-cols-2"
@@ -36,7 +36,9 @@ export default function Home() {
       >
         <img src="/images/content-2.png" alt="homeBanner"></img>
         <div>
-          <h2 className="my-[30px] text-[25px]">Kenapa harus mencari tallent di peworld</h2>
+          <h2 className="my-[30px] text-[25px]">
+            Kenapa harus mencari tallent di peworld
+          </h2>
           {[
             "Lorem ipsum dolor sit amet.",
             "Lorem ipsum dolor sit amet.",
@@ -51,41 +53,63 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section id="content-3"className="container mx-auto px-[100px] grid grid-cols-2 py-[50px]" >
-      <div>
+      <section
+        id="content-3"
+        className="container mx-auto px-[100px] grid grid-cols-2 py-[50px]"
+      >
+        <div>
           <h2 className="mt-[30px] mb-[15px] text-[35px]">Skill Tallent</h2>
-          <p className="mb-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod ipsum et dui rhoncus auctor.</p>
+          <p className="mb-[10px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod
+            ipsum et dui rhoncus auctor.
+          </p>
           <div className="grid grid-cols-2">
-          {[
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet.",
-          ]?.map((item, key) => (
-            <div key={key} className="flex gap-[20px] mt-[15px]">
-              <img src="/images/check-yellow.svg" alt="check"></img>
-              <p>{item}</p>
-            </div>
-          ))}
-          {[
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet.",
-          ]?.map((item, key) => (
-            <div key={key} className="flex gap-[20px] mt-[15px]">
-              <img src="/images/check-yellow.svg" alt="check"></img>
-              <p>{item}</p>
-            </div>
-          ))}
-
+            {[
+              "Lorem ipsum dolor sit amet.",
+              "Lorem ipsum dolor sit amet.",
+              "Lorem ipsum dolor sit amet.",
+              "Lorem ipsum dolor sit amet.",
+              "Lorem ipsum dolor sit amet.",
+            ]?.map((item, key) => (
+              <div key={key} className="flex gap-[20px] mt-[15px]">
+                <img src="/images/check-yellow.svg" alt="check"></img>
+                <p>{item}</p>
+              </div>
+            ))}
+            {[
+              "Lorem ipsum dolor sit amet.",
+              "Lorem ipsum dolor sit amet.",
+              "Lorem ipsum dolor sit amet.",
+              "Lorem ipsum dolor sit amet.",
+              "Lorem ipsum dolor sit amet.",
+            ]?.map((item, key) => (
+              <div key={key} className="flex gap-[20px] mt-[15px]">
+                <img src="/images/check-yellow.svg" alt="check"></img>
+                <p>{item}</p>
+              </div>
+            ))}
           </div>
         </div>
-            <img src="/images/content-3.png"></img>
+        <img src="/images/content-3.png"></img>
       </section>
-      <Footer/>
+      <section id="CTA" className="container mx-auto px-[100px]">
+        <div
+          className="flex justify-between bg-[#5E50A1] rounded-tr-xl rounded-bl-xl px-[50px] py-[60px] rounded-br-[80px] rounded-tl-[80px] mb-[100px]"
+          width="100%"
+        >
+          <h2 className="text-[30px] text-[white]">
+            Lorem ipsum
+            <br />
+            dolor sit amet
+          </h2>
+          <div className="flex flex-col justify-center">
+            <button className="text-[#5E50A1] hover:scale-[1.03] font-semibold px-[13px] py-[10px] rounded-md bg-[white]">
+              Mulai Dari Sekarang
+            </button>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </main>
   );
 }
