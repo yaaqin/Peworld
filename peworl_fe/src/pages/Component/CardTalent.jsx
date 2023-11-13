@@ -1,7 +1,9 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 export default function CardTalent(props) {
-  const { fullname, job, photo, skill, location } = props;
+  const { fullname, job, photo, skill, location, id } = props;
+  const router = useRouter()
   return (
     <div>
       <div
@@ -40,7 +42,7 @@ export default function CardTalent(props) {
             </div>
           </div>
           <div className="flex justify-center flex-col">
-            <button className="rounded-xl bg-[#5E50A1] text-[white] py-[10px] hover:scale-[1.03] mr-[60px]">
+            <button onClick={() => router.push(`/detail/${id}`)}  className="rounded-xl bg-[#5E50A1] text-[white] py-[10px] hover:scale-[1.03] mr-[60px]">
               View Profile
             </button>
           </div>

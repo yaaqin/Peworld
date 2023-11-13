@@ -50,17 +50,17 @@ export default function Talent_list(props) {
         <div className="flex justify-between bg-[#F6F7F8] container mx-auto px-[100px] py-[20px]">
           <input
             placeholder="Search ur talent"
-            className="focus:outline-none focus:border-sky-500 focus:ring-sky-500 w-full shadow-lg rounded-xl shadow-cyan-500/50 pl-[20px] py-[20px]"
+            className="focus:outline-none w-full shadow-lg rounded-xl shadow-md shadow-[#5E50A1] pl-[20px] py-[20px]"
           ></input>
           <div className="ml-[15px] flex gap-[20px]">
-            <div className="flex flex-col justify-center ">
+            {/* <div className="flex flex-col justify-center ">
               <img
                 src="/images/search.png"
                 alt="search"
                 width="50px"
                 className="hover:scale-[1.03] "
               ></img>
-            </div>
+            </div> */}
             <div className="flex flex-col justify-center">
               <button className="hover:scale-[1.03] px-[25px] py-[10px] rounded-md bg-[#5E50A1] text-[white]">
                 Search
@@ -77,6 +77,7 @@ export default function Talent_list(props) {
                 photo={item.photo}
                 skill={item.skills}
                 location={item.location}
+                id={item.id}
               />
             </div>
           ))}
