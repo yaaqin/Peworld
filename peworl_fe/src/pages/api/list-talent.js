@@ -8,6 +8,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Jakarta",
     skills: ["PHP", "C++", "Java"],
+    socmed: {
+      email: "jamaludinakbar@gmail.com",
+      instagram: "@jamaludinakbar",
+      github: "@jamaludinakbar",
+      gitlab: "@jamaludinakbarwbw99",
+    },
     desk: "Tidak ada kata terlambat untuk memulai hal yang baru. Selama kita masih punya tekad dan semangat, kenapa tidak?",
   },
   {
@@ -17,6 +23,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Jakarta",
     skills: ["PHP", "Javascript", "C++"],
+    socmed: {
+      email: "latifahbimaw@gmail.com",
+      instagram: "@bimalatifah17",
+      github: "@latifahbima",
+      gitlab: "@latifahbima91",
+    },
     desk: "Jangan jadi orang yang selalu berlindung di balik orang lain.",
   },
   {
@@ -26,6 +38,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Bandung",
     skills: ["PHP", "Javascript", "React"],
+    socmed: {
+      email: "sidikburhanudinwibawa@gmail.com",
+      instagram: "@sidikbw",
+      github: "@sidikburhanudin",
+      gitlab: "@sidikburh14",
+    },
     desk: "Rencana sederhana yang disusun secara matang lalu diterapkan jauh lebih baik daripada rencana besar yang terus-menerus tertunda.",
   },
   {
@@ -43,6 +61,12 @@ const dataTalent = [
       "Golang",
       "Tailwind",
     ],
+    socmed: {
+      email: "dian14dwi@gmail.com",
+      instagram: "@diandwi14",
+      github: "@dwidian",
+      gitlab: "@dwidian55",
+    },
     desk: "Masa depan adalah milik mereka yang menyiapkan hari ini.",
   },
   {
@@ -52,6 +76,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Semarang",
     skills: ["PHP", "Javascript", "React", "Golang", "Tailwind"],
+    socmed: {
+      email: "agung.darma@gmail.com",
+      instagram: "@darmagung27",
+      github: "@darmaaagung",
+      gitlab: "@darmaagung12",
+    },
     desk: "Jadilah pekerja keras yang selalu percaya pada kemampuan diri sendiri.",
   },
   {
@@ -61,6 +91,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Surabaya",
     skills: ["Javascript", "React", "Material UI"],
+    socmed: {
+      email: "euslanratnawibawa@gmail.com",
+      instagram: "@ratnaruslan91",
+      github: "@ruslanratna",
+      gitlab: "@ruslanratnawibawa01",
+    },
     desk: "Kedewasaan bukan dilihat dari usia, tapi dilihat dari sikap, tindakan, dan tingkah laku.",
   },
   {
@@ -70,6 +106,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Jakarta",
     skills: ["Javascript", "React"],
+    socmed: {
+      email: "anisa.latifah@gmail.com",
+      instagram: "@anisalatifah",
+      github: "@anisalatifah",
+      gitlab: "@anisalatifahwibawa",
+    },
     desk: "Tidak peduli dari mana dirimu berasal, tidak peduli siapa kau sebelumnya, yang terpenting adalah siapa kau hari ini.",
   },
   {
@@ -79,6 +121,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Bandung",
     skills: ["Tailwind", "Javascript", "React"],
+    socmed: {
+      email: "agungwangi07@gmail.com",
+      instagram: "@agungwangi07",
+      github: "@agungwangi",
+      gitlab: "@agungwangi07",
+    },
     desk: "Pertama kita membentuk kebiasaan dan kebiasaan akan membentuk kita. Kalahkan kebiasaan buruk Anda atau mereka akan mengalahkan Anda.",
   },
   {
@@ -88,6 +136,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Semarang",
     skills: ["Golang", "Javascript", "React", "Bootstrap"],
+    socmed: {
+      email: "widyafaisal12@gmail.com",
+      instagram: "@widya.faisal12",
+      github: "@faisalwidya",
+      gitlab: "@widyafaisal100",
+    },
     desk: "Seperti bergulat melawan seekor gorila, Anda tidak berhenti ketika Anda lelah, Anda berhenti ketika gorila tersebut lelah.",
   },
   {
@@ -97,6 +151,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Semarang",
     skills: ["Next.js", "Javascript", "React"],
+    socmed: {
+      email: "citraakhmad17@gmail.com",
+      instagram: "@citra.aw17",
+      github: "@akhmadcitra",
+      gitlab: "@akhmadcitra91",
+    },
     desk: "Satu-satunya batasan untk meraih mimpi kita adalah keragu-raguan kita akan hari ini. Marilah kita maju dengan keyakinan yang aktif dan kuat.",
   },
   {
@@ -106,6 +166,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Yogyakarta",
     skills: ["Express.JS", "Golang", "React"],
+    socmed: {
+      email: "vina.taufik@gmail.com",
+      instagram: "@vina.taufik22",
+      github: "@vinataufik",
+      gitlab: "@taufikvina12",
+    },
     desk: "Jangan tanyakan pada diri Anda apa yang dibutuhkan dunia. Bertanyalah apa yang membuat Anda hidup, kemudian kerjakan karena yang dibutuhkan dunia adalah orang yang antusias.",
   },
   {
@@ -115,6 +181,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Banten",
     skills: ["Java", "Javascript", "React", "Native"],
+    socmed: {
+      email: "yuliana.sw@gmail.com",
+      instagram: "@yaliana07",
+      github: "@yulianasw",
+      gitlab: "@yuliana12",
+    },
     desk: "Ambillah risiko yang lebih besar dari apa yang dipikirkan orang lain aman. Berilah perhatian lebih dari apa yang orang lain pikir bijak. Bermimpilah lebih dari apa yang orang lain pikir masuk akal.",
   },
   {
@@ -124,6 +196,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Yogyakarta",
     skills: ["Next.JS", "Javascript", "React"],
+    socmed: {
+      email: "widya.vina@gmail.com",
+      instagram: "@vinawidya.w1",
+      github: "@vinawidya",
+      gitlab: "@vinawidya21",
+    },
     desk: "Mengeluh hanya akan membuat hidup kita semakin tertekan, sedangkan bersyukur akan senantiasa membawa kita pada jalan kemudahan.",
   },
   {
@@ -133,6 +211,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Yogyakarta",
     skills: ["PHP", "Javascript", "React", "Express"],
+    socmed: {
+      email: "ediw.me@gmail.com",
+      instagram: "@dwiediwibawa77",
+      github: "@edidwi",
+      gitlab: "@edidwi01",
+    },
     desk: "Belajar memulai lagi karena hidup terus berjalan.",
   },
   {
@@ -142,6 +226,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Semarang",
     skills: ["PHP", "Golang", "Java", "Javascript", "React"],
+    socmed: {
+      email: "wbw.sridian@gmail.com",
+      instagram: "@sridian91",
+      github: "@diansriw",
+      gitlab: "@diansriw01",
+    },
     desk: "Kalau hidup sekadar hidup, babi di hutan juga hidup. Kalau kerja sekadar bekerja, kera juga bekerja.",
   },
   {
@@ -151,6 +241,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Bali",
     skills: ["PHP", "React", "Golang"],
+    socmed: {
+      email: "sayaguntur@gmail.com",
+      instagram: "@guntur98",
+      github: "@gunturyusuf",
+      gitlab: "@yusufguntur11",
+    },
     desk: "Kesulitan bukanlah sesuatu yang harus diratapi terus-menerus. Tapi kesulitan sesuatu yang akan membuatmu semakin gigih dan kuat.",
   },
   {
@@ -160,6 +256,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Banten",
     skills: ["React"],
+    socmed: {
+      email: "aisahcahya33@gmail.com",
+      instagram: "@aisahcahya.wbw",
+      github: "@cahyaisah",
+      gitlab: "@cahyaisah91",
+    },
     desk: "Tujuan hidup haruslah setinggi langit di mana semua orang ingin menggapainya, bukan seperti tanah di mana semua orang bisa menginjaknya.",
   },
   {
@@ -169,6 +271,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Jakarta",
     skills: ["Javascript", "React"],
+    socmed: {
+      email: "ratuwibowo@gmail.com",
+      instagram: "@ratuidris99",
+      github: "@wiboworatu",
+      gitlab: "@wiboworatu99",
+    },
     desk: "Semakin kita mencintai diri kita sendiri, semakin kita tidak seperti orang lain dan menjadikan kita unik.",
   },
   {
@@ -178,6 +286,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Bandung",
     skills: ["PHP", "React"],
+    socmed: {
+      email: "tirta.rahman@gmail.com",
+      instagram: "@tirta.rw",
+      github: "@rahmantirta",
+      gitlab: "@rahmantirta14",
+    },
     desk: "Manusia itu bagaikan pasir di antara hamparan tanah. Ia tidak harus menjadi penting kalau tujuannya hanya untuk bertahan hidup.",
   },
   {
@@ -187,6 +301,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Balikpapan",
     skills: ["PHP", "Javascript", "React", "Kotlin"],
+    socmed: {
+      email: "nur.bacht@gmail.com",
+      instagram: "@bachtiar.nur",
+      github: "@nurbacht",
+      gitlab: "@bachtiar",
+    },
     desk: "Setiap penemuan selalu menciptakan pengetahuan baru.",
   },
   {
@@ -196,6 +316,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Riau",
     skills: ["PHP", "Javascript", "React", "Java"],
+    socmed: {
+      email: "dianhalimah.me@gmail.com",
+      instagram: "@dianhalimah77",
+      github: "@dianhalimah",
+      gitlab: "@dianhalimah",
+    },
     desk: "Kekuatan yang diberikan oleh Tuhan untukmu tidak akan bisa untuk mengubah masa lalu. Kekuatanmu hanya untuk mengubah masa depanmu.",
   },
   {
@@ -205,6 +331,12 @@ const dataTalent = [
     job: "Web Developer",
     location: "Banten",
     skills: ["Javascript"],
+    socmed: {
+      email: "nurahmad@gmail.com",
+      instagram: "@nurahmad01",
+      github: "@nurahmad",
+      gitlab: "@nurahmad99",
+    },
     desk: "Bukan masalah kalau kamu mengerjakan sesuatu dengan lambat. Yang menjadi masalah itu kalau kamu berhenti melakukan sesuatu.",
   },
 ];
@@ -212,13 +344,15 @@ const dataTalent = [
 export default function handler(req, res) {
   if (req.query.id) {
     res
-    .status(200)
-    .json({ status: true, Message: "Get Data Success", Data: dataTalent?.find((item) => item?.id == req.query.id) });
+      .status(200)
+      .json({
+        status: true,
+        Message: "Get Data Success",
+        Data: dataTalent?.find((item) => item?.id == req.query.id),
+      });
   } else {
-
     res
-    .status(200)
-    .json({ status: true, Message: "Get Data Success", Data: dataTalent });
+      .status(200)
+      .json({ status: true, Message: "Get Data Success", Data: dataTalent });
   }
-  }
-  
+}

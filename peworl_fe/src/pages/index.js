@@ -1,5 +1,6 @@
 import Navbar from "./Component/navbar";
 import Footer from "./Component/footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,9 +19,11 @@ export default function Home() {
             ipsum et dui rhoncus auctor.
           </p>
           <div>
-            <button className="bg-[#5E50A1] border-[2px] px-[15px] rounded-md py-[5px] border-[#5E50A1] text-[white]">
-              Mulai Dari Sekarang
-            </button>
+            <Link href={"/talent-list"}>
+              <button className="hover:scale-[1.03] bg-[#5E50A1] border-[2px] px-[15px] rounded-md py-[5px] border-[#5E50A1] text-[white]">
+                Mulai Dari Sekarang
+              </button>
+            </Link>
           </div>
         </div>
         <img
@@ -65,27 +68,27 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2">
             {[
-              "Lorem ipsum dolor sit amet.",
-              "Lorem ipsum dolor sit amet.",
-              "Lorem ipsum dolor sit amet.",
-              "Lorem ipsum dolor sit amet.",
-              "Lorem ipsum dolor sit amet.",
+              "javascript",
+              "golang",
+              "react",
+              "PHP",
+              "native",
             ]?.map((item, key) => (
               <div key={key} className="flex gap-[20px] mt-[15px]">
                 <img src="/images/check-yellow.svg" alt="check"></img>
-                <p>{item}</p>
+                <p className="capitalize">{item}</p>
               </div>
             ))}
             {[
-              "Lorem ipsum dolor sit amet.",
-              "Lorem ipsum dolor sit amet.",
-              "Lorem ipsum dolor sit amet.",
-              "Lorem ipsum dolor sit amet.",
-              "Lorem ipsum dolor sit amet.",
+              "postgre",
+              "express",
+              "next",
+              "elixir",
+              "bund",
             ]?.map((item, key) => (
               <div key={key} className="flex gap-[20px] mt-[15px]">
                 <img src="/images/check-yellow.svg" alt="check"></img>
-                <p>{item}</p>
+                <p className="capitalize">{item}</p>
               </div>
             ))}
           </div>
@@ -97,10 +100,10 @@ export default function Home() {
           className="flex justify-between bg-[#5E50A1] rounded-tr-xl rounded-bl-xl px-[50px] py-[60px] rounded-br-[80px] rounded-tl-[80px] mb-[100px]"
           width="100%"
         >
-          <h2 className="text-[30px] text-[white]">
-            Lorem ipsum
+          <h2 className="capitalize text-[30px] text-[white]">
+            temukan talent terbaik,
             <br />
-            dolor sit amet
+            yang handal dibidangnya
           </h2>
           <div className="flex flex-col justify-center">
             <button className="text-[#5E50A1] hover:scale-[1.03] font-semibold px-[13px] py-[10px] rounded-md bg-[white]">
