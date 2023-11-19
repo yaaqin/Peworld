@@ -44,13 +44,13 @@ export default function Talent_list(props) {
     <>
       <Navbar />
       <section>
-        <div className="container mx-auto px-[100px] py-[30px] bg-[#5E50A1]">
-          <h2 className="text-[30px] text-[white]">Top Jobs</h2>
+        <div className=" px-[100px] py-[30px] bg-[#5E50A1]">
+          <h2 className="text-[30px] text-[white]">Top Talent</h2>
         </div>
-        <div className="flex justify-between bg-[#F6F7F8] container mx-auto px-[100px] py-[20px]">
+        <div className="flex justify-between bg-[#F6F7F8]  px-[100px] py-[20px]">
           <input
             placeholder="Search ur talent"
-            className="focus:outline-none w-full shadow-lg rounded-xl shadow-md shadow-[#5E50A1] pl-[20px] py-[20px]"
+            className="focus:outline-none w-full shadow-lg shadow-qin rounded-xl shadow-md shadow-[#5E50A1] pl-[20px] py-[20px]"
           ></input>
           <div className="ml-[15px] flex gap-[20px]">
             {/* <div className="flex flex-col justify-center ">

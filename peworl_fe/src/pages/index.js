@@ -116,3 +116,10 @@ export default function Home() {
     </main>
   );
 }
+
+export async function getServerSideProps(pops) {
+  
+  return {
+    props: {},
+  };
+}

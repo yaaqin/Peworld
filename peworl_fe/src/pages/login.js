@@ -1,7 +1,50 @@
 import React from "react";
 import Link from "next/link";
+import axios from "axios";
+import { setCookie, getCookie } from "cookies-next";
+import { Result } from "postcss";
 
-export default function login() {
+function Login() {
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+
+  const [isSuccess, setIsSuccess] = React.useState(false);
+  const [errMsg, setErrMsg] = React.useState(null);
+  const [isLoading, setIsLoading] = React.useState(false);
+
+  const handleLogin = () => {
+    setIsLoading(true);
+    setErrMsg(null);
+
+    axios
+      .post("https://hire-job.onrender.com/v1/auth/login", {
+        email: email,
+        password: password,
+      })
+      .then((result) => {
+        setCookie("token", result?.data?.data?.token);
+        setCookie("user", JSON.stringify(result?.data?.data?.user));
+
+        window.location.href = "/";
+
+        // setTimeout(() => {
+        //   window.location.reload();
+        // },50000);
+      })
+      .catch((err) => {
+        const { email, password } = err?.response?.data?.messages ?? {};
+        setIsSuccess(false);
+        setErrMsg(
+          email?.messages ??
+            password?.messages ??
+            err?.response?.data?.messages ??
+            "Something wrong in our app"
+        );
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  };
   return (
     <div>
       <div className="grid grid-cols-2 bg-[#EEF5FF]">
@@ -31,10 +74,22 @@ export default function login() {
             Temukan Talent yang sesuai dengan Kebutuhan Anda dengan fitur
             pencarian berdasarkan skill dari Peworld.
           </p>
+          {isSuccess ? (
+            <div className="alert alert-success" role="alert">
+              <p>Login success, please wait for redirect to our app</p>
+            </div>
+          ) : null}
+
+          {errMsg ? (
+            <div className="alert alert-danger" role="alert">
+              {errMsg}
+            </div>
+          ) : null}
           <label className="text-[#9EA0A5] text-muted mt-[20px] block">
             Email
           </label>
           <input
+            onChange={(e) => setEmail(e.target.value)}
             id="email"
             placeholder="Email"
             className=" w-[100%] px-[20px] py-[10px] mt-[5px] rounded-md"
@@ -43,6 +98,7 @@ export default function login() {
             Password
           </label>
           <input
+            onChange={(e) => setPassword(e.target.value)}
             id="password"
             type="password"
             placeholder="Password"
@@ -50,11 +106,15 @@ export default function login() {
           ></input>
           <div className=" mt-[5px] flex justify-end">
             <Link href={"/forgot-password"}>
-              <p className="">Lupa kata sandi?</p>
+              <p className="text-[black] mt-[15px]">Lupa kata sandi?</p>
             </Link>
           </div>
-          <button className="bg-[#FBB017] text-[white] w-[100%] mt-[15px] rounded-md hover:scale-[1.01] py-[10px]">
-            Masuk
+          <button
+            className="bg-[#FBB017] text-[white] w-[100%] mt-[15px] rounded-md hover:scale-[1.01] py-[10px]"
+            onClick={handleLogin}
+            disabled={isLoading}
+          >
+            {isLoading ? "Loading..." : "Masuk"}
           </button>
           <p className="text-center mt-[15px]">
             Anda belum punya akun?{" "}
@@ -67,3 +127,22 @@ export default function login() {
     </div>
   );
 }
+
+export async function getServerSideProps({ req, res }) {
+  const user = getCookie("user", { req, res });
+  const token = getCookie("token", { req, res });
+
+  if (user && token) {
+    return {
+      redirect: {
+        permanent: false,
+        destination: "/",
+      },
+    };
+  }
+
+  return {
+    props: {}
+  }
+}
+export default Login;

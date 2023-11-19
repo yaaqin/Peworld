@@ -22,7 +22,7 @@ export default function CardTalent(props) {
             <div className="flex flex-col gap-[5px]">
               <h4 className="text-[30px] capitalize">{fullname}</h4>
               <p className="text-[gray]">{job}</p>
-              <div className="flex gap-[10px] mb-[10px]">
+              <div className="flex gap-[5px] mb-[10px] h-[25px]">
                 <img
                   width="20px"
                   alt="locationIcon"

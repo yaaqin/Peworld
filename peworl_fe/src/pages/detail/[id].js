@@ -2,8 +2,13 @@ import React from "react";
 import Navbar from "../Component/navbar";
 import Footer from "../Component/footer";
 import axios from "axios";
+import { useRouter } from "next/router";
+import { getCookie } from "cookies-next";
 
 function Detail(props) {
+  const user = getCookie("user") ? JSON.parse(getCookie("user")) : null;
+
+  const router = useRouter();
   const { Data } = props;
   return (
     <div>
@@ -25,11 +30,17 @@ function Detail(props) {
             <div width="80%" className="px-[200px]">
               <p className="py-[20px] mb-[10px] text-[20px]">{Data?.desk}</p>
             </div>
-            <div>
-              <button className="hover:scale-[1.03] py-[5px] px-[55px] bg-[#5E50A1] text-[25px] text-[white] rounded-xl">
-                Hire
-              </button>
-            </div>
+            {user ? (
+              <div>
+                <button
+                  onClick={() => router.push(`/hiring/${Data?.id}`)}
+                  className="hover:scale-[1.03] py-[5px] px-[55px] bg-[#5E50A1] text-[25px] text-[white] rounded-xl"
+                >
+                  Hire
+                </button>
+              </div>
+            ) : null}
+
             <div className="mt-[50px] px-[450px]">
               <h2 className="text-[30px] text-bolder">Skill</h2>
               <div className="flex flex-wrap gap-[20px] justify-center mt-[30px]">

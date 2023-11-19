@@ -5,7 +5,7 @@ export default function footer() {
     <div>
       <section
         id="footer"
-        className="bg-[#5E50A1] py-[50px] container mx-auto px-[100px]"
+        className="bg-[#5E50A1] py-[50px] px-[100px]"
       >
         <img src="/images/logo-white.png" alt="logo"></img>
         <p className="text-[white] my-[30px]">
