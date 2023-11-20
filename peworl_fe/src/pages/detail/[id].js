@@ -56,19 +56,19 @@ function Detail(props) {
             <div className="flex flex-col mt-[70px] mb-[50px]">
               <div className="flex justify-center gap-[20px] mt-[10px]">
                 <img src="/images/gmail.svg"></img>
-                <p>{Data?.socmed?.email}</p>
+                <p className="pt-[8px]">{Data?.socmed?.email}</p>
               </div>
               <div className="flex justify-center gap-[20px] mt-[10px]">
                 <img src="/images/instagram.svg"></img>
-                <p>{Data?.socmed?.instagram}</p>
+                <p className="pt-[8px]">{Data?.socmed?.instagram}</p>
               </div>
               <div className="flex justify-center gap-[20px] mt-[10px]">
                 <img src="/images/github.svg"></img>
-                <p>{Data?.socmed?.github}</p>
+                <p className="pt-[8px]">{Data?.socmed?.github}</p>
               </div>
               <div className="flex justify-center gap-[20px] mt-[10px]">
                 <img src="/images/gitlab.svg"></img>
-                <p>{Data?.socmed?.gitlab}</p>
+                <p className="pt-[8px]">{Data?.socmed?.gitlab}</p>
               </div>
             </div>
           </div>

@@ -287,7 +287,7 @@ const dataTalent = [
     location: "Bandung",
     skills: ["PHP", "React"],
     socmed: {
-      email: "tirta.rahman@gmail.com",
+      email: "yaqin.me@gmail.com",
       instagram: "@tirta.rw",
       github: "@rahmantirta",
       gitlab: "@rahmantirta14",
