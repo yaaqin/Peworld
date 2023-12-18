@@ -9,11 +9,11 @@ export default function footer() {
       >
         <img src="/images/logo-white.png" alt="logo"></img>
         <p className="text-[white] my-[30px]">
-          Lorem ipsum dolor sit amet, consectetur
+        Peworld adalah destinasi terkemuka 
           <br />
-          adipiscing elit. In euismod ipsum et dui
+          untuk menghubungkan perusahaan dan individu 
           <br />
-          rhoncus auctor.
+          dengan bakat profesional terbaik di seluruh dunia.
         </p>
         <hr></hr>
         <div className="mt-[30px] flex justify-between">

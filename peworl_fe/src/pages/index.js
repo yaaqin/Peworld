@@ -15,8 +15,7 @@ export default function Home() {
             Talenta terbaik negri untuk perubahan revolusi 4.0
           </h1>
           <p className="py-[20px] text-[18]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod
-            ipsum et dui rhoncus auctor.
+          Temukan Bakat Profesional Sesuai Kebutuhanmu, Dunia Talenta Profesional di Ujung Jari!
           </p>
           <div>
             <Link href={"/talent-list"}>
@@ -43,11 +42,11 @@ export default function Home() {
             Kenapa harus mencari tallent di peworld
           </h2>
           {[
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet.",
+            "Analisis Data Mendalam.",
+            "Proses Seleksi yang Efisien.",
+            "Pemantauan Kinerja.",
+            "Katalog Bakat Luas.",
+            "Koneksi Global.",
           ]?.map((item, key) => (
             <div key={key} className="flex gap-[20px] mt-[15px]">
               <img src="/images/check-purple.svg" alt="check"></img>
@@ -63,8 +62,7 @@ export default function Home() {
         <div>
           <h2 className="mt-[30px] mb-[15px] text-[35px]">Skill Tallent</h2>
           <p className="mb-[10px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod
-            ipsum et dui rhoncus auctor.
+            Profile talent yang di sertai dengan berbagai skill profesional terupdate
           </p>
           <div className="grid grid-cols-2">
             {[
