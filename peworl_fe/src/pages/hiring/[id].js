@@ -52,7 +52,7 @@ function Hiring(props) {
             <p>{Data.job}</p>
             <div className="flex gap-[5px] my-[15px] h-[20px]">
               <img
-                width="20px"
+                width="35px"
                 alt="icon location"
                 src="/images/map-pin.png"
               ></img>
@@ -70,11 +70,11 @@ function Hiring(props) {
               ))}
             </div>
             <div className="mt-[140px] ml-[300px]">
-              <Link href={"/talent-list"}>
-                <button className="hover:scale-[1.03] bg-[#5E50A1] text-[#fff] px-[10px] py-[5px] rounded-md">
+              {/* <Link href={"/talent-list"}>
+                <button className="hover:scale-[1.03] bg-[#5E50A1] text-[#fff] px-[10px] mt-[-20px] rounded-md">
                   Talent-list
                 </button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

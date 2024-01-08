@@ -48,27 +48,27 @@ function Login() {
   return (
     <div>
       <div className="grid grid-cols-2 bg-[#EEF5FF]">
-        <div className="h-[100vh]">
+        <div className="col-span-2 md:col-span-1 md:h-[100vh]">
           <Link href={"/"}>
             <img
               alt="logo"
               src="/images/logo-white.png"
-              className=" hover:scale-[1.03] absolute z-10 mt-[30px] ml-[50px]"
+              className=" hover:scale-[1.03] absolute z-10 mt-[30px] ml-[20px] md:ml-[50px]"
             ></img>
           </Link>
-          <div className="flex absolute items-center h-[100vh]">
-            <p className="w-[50%] text-[45px] drop-shadow-lg text-[white] z-10 ml-[50px]">
+          <div className="flex absolute w-[95%] items-center h-[100vh]">
+            <p className="w-[100%] md:w-[45%] text-[45px] drop-shadow-lg text-[white] z-10 ml-[20px] md:ml-[50px]">
               Temukan developer berbakat & terbaik di berbagai bidang keahlian
             </p>
           </div>
-          <div className="h-[100%] w-[50%] opacity-75 absolute bg-[#5E50A1]"></div>
+          <div className="h-[80vh] md:h-[100%] w-[100%] md:w-[50%] opacity-75 absolute bg-[#5E50A1]"></div>
           <img
             alt="background"
             src="/images/aut-bg.jpg"
             className="h-[100%] w-[100%] object-cover"
           ></img>
         </div>
-        <div className="z-50 bg-[#EEF5FF] h-[100vh] mx-[50px] pt-[130px]">
+        <div className="col-span-2 md:col-span-1 mt-[220px] md:mt-[0] z-50 bg-[#EEF5FF] h-[100vh] md:h-[100vh] mx-[20px] md:mx-[50px] pt-[30px] md:pt-[130px]">
           <h1 className="text-[32px]">Halo, Pewpeople</h1>
           <p className="capitalize">
             Temukan Talent yang sesuai dengan Kebutuhan Anda dengan fitur

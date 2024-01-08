@@ -25,8 +25,11 @@ function Detail(props) {
           <div className="text-center flex flex-col">
             <h3 className="text-[35px]">{Data?.fullname}</h3>
             <span>{Data?.job}</span>
-            <span className="text-[25px]">{Data?.location}</span>
             <span>Freelancer</span>
+            <div className="mx-auto d-flex align-items-center">
+              <img src="/images/map-pin.png" className="mt-[25] w-[50px] h-[30px]"></img>
+              <span className="text-[25px] mt-[-15]">{Data?.location}</span>
+            </div>
             <div width="80%" className="px-[200px]">
               <p className="py-[20px] mb-[10px] text-[20px]">{Data?.desk}</p>
             </div>

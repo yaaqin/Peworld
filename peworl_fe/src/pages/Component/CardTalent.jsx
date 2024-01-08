@@ -24,7 +24,7 @@ export default function CardTalent(props) {
               <p className="text-[gray]">{job}</p>
               <div className="flex gap-[5px] mb-[10px] h-[25px]">
                 <img
-                  width="20px"
+                  width="40px"
                   alt="locationIcon"
                   src="/images/map-pin.png"
                 ></img>
