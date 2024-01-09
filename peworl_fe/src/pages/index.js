@@ -10,14 +10,15 @@ export default function Home() {
         id="content-1"
         className="py-[70px] container mx-auto px-[100px] grid grid-cols-2"
       >
-        <div className="flex flex-col justify-center">
-          <h1 className="text-[44px]">
+        <div className="flex mt-[-40px] md:mt-[0] flex-col col-span-2 md:col-span-1 justify-center">
+          <h1 className="text-[44px] text-center md:text-left">
             Talenta terbaik negri untuk perubahan revolusi 4.0
           </h1>
-          <p className="py-[20px] text-[18]">
-          Temukan Bakat Profesional Sesuai Kebutuhanmu, Dunia Talenta Profesional di Ujung Jari!
+          <p className="py-[20px] text-center md:text-left text-[18]">
+            Temukan Bakat Profesional Sesuai Kebutuhanmu, Dunia Talenta
+            Profesional di Ujung Jari!
           </p>
-          <div>
+          <div className="mx-auto md:mx-[0]">
             <Link href={"/talent-list"}>
               <button className="hover:scale-[1.03] bg-[#5E50A1] border-[2px] px-[15px] rounded-md py-[5px] border-[#5E50A1] text-[white]">
                 Mulai Dari Sekarang
@@ -25,12 +26,14 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <img
-          src="/images/content-1.png"
-          height="600px"
-          width="600px"
-          alt="homeBanner"
-        ></img>
+        <div className="col-span-2 md:col-span-1 mt-[40px] md:mt-[0]">
+          <img
+            src="/images/content-1.png"
+            height="600px"
+            width="600px"
+            alt="homeBanner"
+          ></img>
+        </div>
       </section>
       <section
         id="content-2"
@@ -62,33 +65,26 @@ export default function Home() {
         <div>
           <h2 className="mt-[30px] mb-[15px] text-[35px]">Skill Tallent</h2>
           <p className="mb-[10px]">
-            Profile talent yang di sertai dengan berbagai skill profesional terupdate
+            Profile talent yang di sertai dengan berbagai skill profesional
+            terupdate
           </p>
           <div className="grid grid-cols-2">
-            {[
-              "javascript",
-              "golang",
-              "react",
-              "PHP",
-              "native",
-            ]?.map((item, key) => (
-              <div key={key} className="flex gap-[20px] mt-[15px]">
-                <img src="/images/check-yellow.svg" alt="check"></img>
-                <p className="capitalize">{item}</p>
-              </div>
-            ))}
-            {[
-              "postgre",
-              "express",
-              "next",
-              "elixir",
-              "bund",
-            ]?.map((item, key) => (
-              <div key={key} className="flex gap-[20px] mt-[15px]">
-                <img src="/images/check-yellow.svg" alt="check"></img>
-                <p className="capitalize">{item}</p>
-              </div>
-            ))}
+            {["javascript", "golang", "react", "PHP", "native"]?.map(
+              (item, key) => (
+                <div key={key} className="flex gap-[20px] mt-[15px]">
+                  <img src="/images/check-yellow.svg" alt="check"></img>
+                  <p className="capitalize">{item}</p>
+                </div>
+              )
+            )}
+            {["postgre", "express", "next", "elixir", "bund"]?.map(
+              (item, key) => (
+                <div key={key} className="flex gap-[20px] mt-[15px]">
+                  <img src="/images/check-yellow.svg" alt="check"></img>
+                  <p className="capitalize">{item}</p>
+                </div>
+              )
+            )}
           </div>
         </div>
         <img src="/images/content-3.png"></img>
@@ -116,7 +112,6 @@ export default function Home() {
 }
 
 export async function getServerSideProps(pops) {
-  
   return {
     props: {},
   };

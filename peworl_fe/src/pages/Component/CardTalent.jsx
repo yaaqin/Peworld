@@ -42,7 +42,7 @@ export default function CardTalent(props) {
             </div>
           </div>
           <div className="flex justify-center flex-col">
-            <button onClick={() => router.push(`/detail/${id}`)}  className="rounded-xl bg-[#5E50A1] text-[white] py-[10px] hover:scale-[1.03] mr-[60px]">
+            <button onClick={() => router.push(`/detail/${id}`)}  className="rounded-xl bg-[#5E50A1] text-[white] py-[10px] px-[10px] w-[120px] hover:scale-[1.03] mr-[60px]">
               View Profile
             </button>
           </div>

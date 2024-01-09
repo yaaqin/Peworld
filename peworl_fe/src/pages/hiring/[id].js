@@ -38,7 +38,7 @@ function Hiring(props) {
       <Navbar />
       <div className="grid grid-cols-5">
         <div className="col-span-2 py-[50px] px-[50px] bg-[#EEF5FF] ">
-          <div className="h-[750px] w-[497px] bg-[#fff] rounded-xl py-[30px] shadow-qin px-[50px]">
+          <div className="h-[750px] w-[100%] bg-[#fff] rounded-xl py-[30px] shadow-qin px-[50px]">
             <div className="flex justify-center">
               <img
                 alt="profile"
