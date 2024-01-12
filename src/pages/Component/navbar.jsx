@@ -31,12 +31,12 @@ function Navbar() {
               ></img>
             ) : (
               <div className="flex justify-between gap-[10px] md:gap-[20px]">
-                <Link href={"/login"}>
+                <Link href={"/upcoming"}>
                   <button className="hover:scale-[1.03] border-[#5E50A1] border-[2px] px-[15px] text-[black] rounded-xl py-[5px]">
                     Masuk
                   </button>
                 </Link>
-                <Link href={"/register"}>
+                <Link href={"/upcoming"}>
                   <button className="hover:scale-[1.03] bg-[#5E50A1] border-[2px] px-[15px] rounded-xl py-[5px] border-[#5E50A1] text-[white]">
                     Daftar
                   </button>

@@ -71,14 +71,14 @@ export default function Talent_list(props) {
         <div>
           {currentPages.map((item, key) => (
             <div key={key}>
-              {/* <CardTalent
+              <CardTalent
                 fullname={item.fullname}
                 job={item.job}
                 photo={item.photo}
                 skill={item.skills}
                 location={item.location}
                 id={item.id}
-              /> */}
+              />
             </div>
           ))}
         </div>
