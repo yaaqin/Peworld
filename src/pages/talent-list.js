@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Component/navbar";
 import Footer from "./Component/footer";
-import CardTalent from "./Component/CardTalent";
+import CardTalent from "./Component/card-talent";
 import axios, { all } from "axios";
 import { list } from "postcss";
 import next from "next";
